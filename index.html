@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,30 +14,32 @@
             <div class="nav">
                 <nav class="navbar">
                     <a href="#about">About</a>
-                    <a href="#">Contact</a>
+                    <a href="#footer">Contact</a>
                     <a href="#works">Projects</a>
-                    <a href="">Resume</a>
+                    <a href="#resume">Resume</a>
                 </nav>
             </div>
         </div>
         
         <div class="intro">
             <div class="introduction">
-                    <h2> Hi, I'm <br>  Chiaka <br> a Software Engineer</h2>
+                    <h2> Hi, I'm <br>  Chiaka <br> a Software Developer</h2>
                 <div class="resume-button">
-                    <button>Download Resume</button>
+                    <a href="/" download="Chiaka Williams' Resume.pdf">
+                        <button type="button" id="resume">Download Resume</button>
+                    </a>
                 </div>
             </div>
             
         </div>
         <div class="about-me">
             <div class="about">
-                <h1 id="about">I'm a software developer who uses javascript to build web apps on the frontend and Nodejs on the backeend</h1>
+                <h1 id="about">I'm a software developer who uses javascript to build web applications</h1>
             </div>
         </div>
         <div class="get-in-touch">
             <div class="button">
-                <button>Get in touch</button>
+                <button><a href="#footer" id="get">Get in touch</a></button>
             </div>
         </div>
         <div class="my-works">
@@ -79,12 +82,40 @@
         </div>
     
     </div>
-    <div class="footer">
+    <div class="contact-form">
+        <form
+  action="https://formspree.io/f/xdoyaaab"
+  method="POST">
+  <div class="label-1">
+    <label>
+        <!-- Name: -->
+        <input type="name" placeholder="Name" name="text" required>
+      </label>
+  </div>
+  <div class="label-mail">
+    <label> 
+        <!-- Mail: -->
+        <input type="email" placeholder="Mail" name="_replyto" required>
+      </label>
+  </div>
+  <div class="label-message">
+    <label>
+        <!-- Your message: -->
+        <textarea name="message" placeholder="Message" required></textarea>
+      </label>
+  </div>
+  
+<div class="send">
+    <button type="submit">Send</button>
+</div>
+</form>
+    </div>
+    <div class="footer" id="footer">
         <footer>
             <div class="icons">
-                <div class="linkedin">linkedin</div>
-                <div class="facebook">facebook</div>
-                <div class="github">github</div> 
+                <div class="linkedin"><a href="https://www.linkedin.com/in/chiaka-williams-534284126/" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-linkedin"></i></a></div>
+                <!-- <div class="mail"><i class="fas fa-3x fa-envelope"></i></div> -->
+                <div class="github"><a href="https://github.com/Jahsays?tab=overview&from=2021-04-01&to=2021-04-27" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-github-square"></i></a></div> 
             </div>
         </footer>
     </div>
