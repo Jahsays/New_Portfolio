@@ -52,7 +52,7 @@ a:hover {
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/back.jpg);
+    background-image: url("https://res.cloudinary.com/jsays/image/upload/v1619716031/back.jpg");
 }
 
 .resume-button button {
@@ -87,7 +87,7 @@ a:hover {
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/back-2.jpg);
+    background-image: url"https://res.cloudinary.com/jsays/image/upload/v1619716029/back-2.jpg";
 }
 .get-in-touch{
     /* border: 3px solid brown; */
@@ -150,10 +150,10 @@ a:hover {
     
 }
 .box-1{
-    background-image: url(box-1\ img.png);
+    background-image: url("https://res.cloudinary.com/jsays/image/upload/v1619716098/box-1_img.png");
 }
 .box-2{
-    background-image: url(box-2\ img.png);
+    background-image: url("https://res.cloudinary.com/jsays/image/upload/v1619715867/box-2_img.png");
 }
 .box-3{
     /* background-image: url(box-2\ img.png); */
@@ -170,7 +170,7 @@ a:hover {
     height: 25%;
 }
 .box-1a{
-    background-image: url(box-1a\ img.png);
+    background-image: url("https://res.cloudinary.com/jsays/image/upload/v1619716047/box-1a_img.png");
 }
 .in-progress{
     color: #c27e0a;
