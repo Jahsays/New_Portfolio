@@ -1,7 +1,14 @@
-.container{
-    border: 3px solid red;
-    height: 104em;
+*, *::before ,*::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+.container{
+    /* border: 3px solid red; */
+    height: 120em;
+}
+ /******************* Nav *************************/
 .navigation{
     /* border: 10px solid brown; */
     display: flex;
@@ -22,30 +29,32 @@
 }
 a{
     text-decoration: none;
-    color: #ffffff;
 }
+a:hover {
+    color: #ffffff;
+  }
+  /*************************Introduction*******************************/
 .intro{
     /* border: 3px solid blue; */
     height: 20%;
     display: flex;
     justify-content: center;
     background-color: #34353a;
+    /* height: 20%; */
 }
 .introduction{
-    border: 3px solid blue;
-    width: 30%;
+    /* border: 3px solid blue; */
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/back.jpg);
 }
-/* .we{
-    border: 1px solid green;
-    width: 30%;
-} */
-.resume-button {
-    border: 2px solid wheat;
-}
+
 .resume-button button {
     border: 1px solid #c27e0a;
     height: 3em;
@@ -55,11 +64,14 @@ a{
     color: #130c02;
     width: 50%;
 }
+#get{
+    color: #ffffff;
+}
 .introduction h2{
     color: #ffffff;
 }
 .about-me{
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     height: 20%;
     display: flex;
     justify-content: center;
@@ -67,22 +79,31 @@ a{
     background-color: #2e2f34;
 }
 .about{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 40%;
-    color: #ffffff;
+    color: #f2e9f3;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/back-2.jpg);
 }
 .get-in-touch{
-    border: 3px solid brown;
+    /* border: 3px solid brown; */
     height: 5%;
     display: flex;
     justify-content: center;
-    background-color: #34353a;
+    background-color: #e9ebf7;
     align-items: center;
 }
 .button{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 10%;
     height: 90%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 .button button{
     border: 1px solid #c27e0a;
@@ -93,47 +114,176 @@ a{
     background: #c27e0a;
     color: #130c02;
 }
+/*****************************************Projects**********************************************/
 .my-works{
-    border: 3px solid ;
-    /* height: 11%; */
+    /* border: 3px solid ; */
+    height: 3%;
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     background-color: #2e2f34;
 }
 .works{
-    border: 1px solid brown;
-    width: 13%;
-    height: 13%;
-    color: #ffffff;
+    /* border: 1px solid brown; */
+    width: 30%;
+    height: 100%;
+    color: #c27e0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box-container{
     display: flex;
     justify-content: space-around;
     padding-top: 1em;
     background-color: #34353a;
+    height: 24%;
     /* border: 10px solid olivedrab ; */
 }
-.box-1, .box-2, .box-3{
+.box-1, .box-2, .box-3,.box-1a{
     width: 20em;
     height: 20em;
     /* background-color: blue; */
     background-repeat: no-repeat;
     background-size: cover;
     /* border: 2px solid purple; */
+    
+}
+.box-1{
+    background-image: url(box-1\ img.png);
+}
+.box-2{
+    background-image: url(box-2\ img.png);
+}
+.box-3{
+    /* background-image: url(box-2\ img.png); */
     box-shadow: 2px 2px 2px 2px #ffffff;
 }
 .box-container2{
-    padding-top: 2em;
+    /* padding-top: 2em; */
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2e2f34;
+    height: 25%;
+}
+.box-1a{
+    background-image: url(box-1a\ img.png);
 }
 .in-progress{
+    color: #c27e0a;
+    padding-bottom: 1em;
+   
+}
+
+.description h2, a{
+    color: #c27e0a;
+}
+.description p{
     color: #ffffff;
 }
+
+/************************************Contact form and icons****************************************/
+.contact{
+    /* border: 2px solid red; */
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    background-color: #34353a;
+}
+.contact-form{
+    /* border: 1px solid blue; */
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input,textarea{
+    border: 2px solid grey;
+    width: 40em;
+    height: 6em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding-bottom: 2em;
+    background-color: #34353a;
+    /* font-size: .5em; */
+}
+textarea{
+height: 15em;
+padding-top: 5em;
+}
+.send{
+    /* border: 1px solid; */
+    height: 2em;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.send button{
+height: 1.5em;
+width: 20%;
+font-size: 1.3em;
+background: #c27e0a;
+border: none;
+color: #ffffff;
+border-radius: 1.5em;
+/* padding-top: 2em; */
+}
+/**************************************** icons******************************** */
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid; */
+    width: 40%;
+}
+.connect{
+    /* border: 1px solid blue; */
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+}
+.iconz{
+    /* border: 4px solid rgb(122, 230, 20); */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+    /* width: inherit; */
+    /* height: 3em; */
+}
+.linkedin, .github{
+    /* border: 1px solid ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c27e0a;
+    height: 50%;
+}
+/************************************Footer****************************************/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    height: 3em;
+    background-color: #e9ebf7;
+}
+footer{
+    /* border: 1px solid purple; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e2f34;
+    font-size: 1.5em;
+}
+
+
 /* .my-works {
     width: 90%;
     height: 300px;
