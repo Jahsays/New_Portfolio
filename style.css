@@ -87,7 +87,7 @@ a:hover {
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url"https://res.cloudinary.com/jsays/image/upload/v1619716029/back-2.jpg";
+    background-image: url("https://res.cloudinary.com/jsays/image/upload/v1619716029/back-2.jpg");
 }
 .get-in-touch{
     /* border: 3px solid brown; */
