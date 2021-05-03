@@ -1,2 +1,2 @@
 # New_Portfolio
-Some of the projects I've built/worked on.
+A catalogue of some projects I've built/worked on.
