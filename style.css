@@ -213,6 +213,8 @@ input,textarea{
     padding-bottom: 2em;
     background-color: #34353a;
     /* font-size: .5em; */
+    color: #ffffff;
+    border-bottom: 1.5px solid #ffffff3b;
 }
 textarea{
 height: 15em;
@@ -337,16 +339,20 @@ footer{
         text-align: center;
         justify-content: center;
         margin-top: 23.7em;
-        width: inherit;
+        /* width: inherit; */
     }
     .contact-form{
         height: 20em;
         width: inherit;
     }
     input,textarea{
-        width: 30em;
+        width: 35em;
         height: 6em;
+        font-size-adjust: none;
     }
+    input[type='name'] { font-size: 0.8em; }
+    input[type='email'] { font-size: 0.8em; }
+    
     .send{
         margin-top: 1em;
     }
@@ -405,9 +411,8 @@ footer{
         align-items: center;
     }
     
-    input,textarea{
+    input, textarea{
         width: 20em;
-        /* font-size: 1em; */
     }
     .send{
         margin-top: 1em;
