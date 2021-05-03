@@ -270,7 +270,7 @@ border-radius: 1.5em;
 .footer{
     display: flex;
     justify-content: center;
-    border: 1px solid;
+    /* border: 1px solid; */
     height: 3em;
     background-color: #e9ebf7;
 }
@@ -347,13 +347,36 @@ footer{
         background-color: #e9ebf7;
     }
 }
-/* @media (max-width: 1000px) and (min-width: 601px) {
-    .my-works {
-        width: 50%;
+
+@media (max-width: 320px){
+    p{
+        display: none;
+    }
+
+    .introduction{
+        width: 100%;
+       background-image: none;
+       background-color: black;
+    }
+    .about{
+        width: 100%;
+    }
+    .button{
+        width: 55%;
+    }
+    .works{
+        width: 80%;
+    }    
+     .box-1, .box-2, .box-3,.box-1a{
+        width: 17em;
+        height: 14em;
+    }  
+    input,textarea{
+        width: 20em;
+    }
+
+    footer{
+        width: 100%;
+        border: 1px solid;
     }
 }
-@media (max-width: 3000px) and (min-width: 1001px) {
-    .my-works {
-        width: 30%;
-    }
-}  */
