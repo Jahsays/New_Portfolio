@@ -347,8 +347,10 @@ footer{
         background-color: #e9ebf7;
     }
 }
+@media (max-width: 1000px){
 
-@media (max-width: 320px){
+}
+@media (max-width: 480px){
     p{
         display: none;
     }
