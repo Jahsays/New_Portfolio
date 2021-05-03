@@ -396,9 +396,14 @@ footer{
         /* font-size: 0.6em; */
     }    
      .box-1, .box-2, .box-3,.box-1a{
-        width: 23em;
+        width: 21em;
         height: 14em;
     } 
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     input,textarea{
         width: 20em;
