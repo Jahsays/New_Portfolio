@@ -299,6 +299,7 @@ footer{
         width: 25%;
     }
     .works{
+        /* border: 2px green; */
         width: 50%;
     }
     .box-container{
@@ -347,9 +348,9 @@ footer{
         background-color: #e9ebf7;
     }
 }
-@media (max-width: 1000px){
+/* @media (max-width: 1000px){ */
 
-}
+
 @media (max-width: 480px){
     p{
         display: none;
@@ -367,7 +368,9 @@ footer{
         width: 55%;
     }
     .works{
-        width: 80%;
+        width: 100%;
+        /* border: 10px solid rgb(197, 11, 42); */
+        font-size: 0.6em;
     }    
      .box-1, .box-2, .box-3,.box-1a{
         width: 17em;
