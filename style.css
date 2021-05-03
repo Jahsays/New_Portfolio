@@ -286,6 +286,9 @@ footer{
 
 /* @media (min-width:320px)  {  smartphones, iPhone, portrait 480x320 phones } */
 @media (max-width: 600px) {
+    *{
+        font-size: 1em;
+    }
     .container{
         /* border: 3px solid rgb(0, 255, 42); */
         height: 120em;
@@ -293,6 +296,17 @@ footer{
     }
     .nav{
         height: 50%;
+        width: 100%;
+    }
+    .introduction{
+        width: 100%;
+       /* background-image: none;
+       background-color: black; */
+    }
+    .resume-button button{
+        width: 25%;
+    }
+    .about{
         width: 100%;
     }
     .button{
@@ -334,11 +348,14 @@ footer{
         height: 6em;
     }
     .send{
-        margin-top: -1em;
+        margin-top: 1em;
     }
     .send button{
     height: 1.8em;
     width: 40%;
+    }
+    .connect{
+        padding-top: 4em;
     }
     .icons{
         width: inherit;
@@ -352,6 +369,9 @@ footer{
 
 
 @media (max-width: 480px){
+    *{
+        font-size: 1em;
+    }
     p{
         display: none;
     }
@@ -361,25 +381,40 @@ footer{
        background-image: none;
        background-color: black;
     }
+    .resume-button button{
+        width: 25%;
+    }
     .about{
         width: 100%;
     }
     .button{
-        width: 55%;
+        width: 40%;
     }
     .works{
         width: 100%;
         /* border: 10px solid rgb(197, 11, 42); */
-        font-size: 0.6em;
+        /* font-size: 0.6em; */
     }    
      .box-1, .box-2, .box-3,.box-1a{
-        width: 17em;
+        width: 23em;
         height: 14em;
-    }  
+    } 
+    
     input,textarea{
         width: 20em;
+        /* font-size: 1em; */
     }
-
+    .send{
+        margin-top: 1em;
+        /* border: 1px solid; */
+    }
+    .send button{
+    height: 1.8em;
+    width: 40%;
+    }
+    .connect{
+        padding-top: 4em;
+    }
     footer{
         width: 100%;
         border: 1px solid;
