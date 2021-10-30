@@ -4,142 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiaka's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" />
+    <title>Chiaka's Portfoli</title>
+    <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!--------------------- Nav ---------------- -->
-        <div class="navigation">
-            <!-- <div class="nav"> -->
-                <nav class="navbar">
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#works">Projects</a>
-                    <a href="#resume">Resume</a>
-                </nav>
-            <!-- </div> -->
+    <!-- Navbar -->
+    <header>
+        <a href="#home" class="logo">Chiaka</a>
+        <div id="menu-icon" class="fas fa-bars"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Hi, I'm <span>Chiaka</span></h1>
+            <h2>A Software Developer</h2>
         </div>
-        <!-- -------------------------introduction----------------- -->
-        <div class="intro">
-            <div class="introduction">
-                    <h2> Hi, I'm <br>  Chiaka <br> a Software Developer</h2>
-                <div class="resume-button">
-                    <a href="https://drive.google.com/file/d/1p0Hr83gw_hHgS1YGDtAqjAUoVbBpRwKO/view?usp=sharing" target="_blank">
-                        <button type="button" id="resume">Download Resume</button>
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-        <div class="about-me">
-            <div class="about">
-                <h1 id="about">I'm a software developer who uses javascript to build web applications</h1>
-            </div>
-        </div>
-        <div class="get-in-touch">
-            <div class="button">
-                <button><a href="#footer" id="get">Get in touch</a></button>
-            </div>
-        </div>
-        <!-- ----------------------------Projects ----------------------->
-        <div class="my-works">
-            <div class="works">
-                <h1 id="works">Some of my works</h1>
-            </div>
-        </div>
-        <div class="box-container">
-            <div class="box-1-container">
-                <div class="box-1">
-                    </div>
-                    <div class="description">
-                        <h2>Currency Converter</h2>
-                        <p>Convert values from one currency to another</p>
-                         <a href="https://angry-kare-150b05.netlify.app/" target="_blank" rel="noopener noreferrer">visit site</a> 
-                    </div>
-            </div>
-            <div class="box-2-container">
-                <div class="box-2"></div>
-                <div class="description">
-                    <h2>You-tube data api</h2>
-                    <p>This app makes use of the youtube data API to<br> enable users search for multiple youtube channels, <br>these channels are then saved to local storage.<br> As a bonus the app also allows users to view and<br> play the latest videos on selected channels by <br>making a second call to the API to get the videos</p>
-                     <a href="https://brave-perlman-63fc26.netlify.app/" target="_blank" rel="noopener noreferrer">visit site</a> 
-                </div>
-            </div>
-            <div class="box-3-container">
-                <div class="box-3">
-                </div>
-                <div class="description">
-                    <h2>Calendar UI</h2>
-                    <p>A simple Calendar UI built with HTML CSS and <br> Javascript</p>
-                     <a href="https://simple-calendar-ui.netlify.app/" target="_blank" rel="noopener noreferrer">visit site</a> 
-                </div>  
-            </div>
-        </div>
-        <div class="box-container2">
-            <div class="in-progress">
-                <h1>In Progress</h1>
-            </div>
-            <div class="box-1a-container">
-                <div class="box-1a"></div>
-                <div class="description">
-                    <h2>Sales Prediction App</h2>
-                    <p>Helps a restaurant owner/manager predict their sales <br> so as to know when to stockup the inventory or scale down </p>
-                     <a href="https://sales-prediction-app.netlify.app/" target="_blank" rel="noopener noreferrer">visit site</a> 
-                </div>
-            </div>
-        </div>
+    </section>
     
-    </div>
-    <!--------------- contact  --------->
-    <div class="contact" id="contact">
-        <!---------------------------- contact-form ------------------------- -->
-        <div class="contact-form">
-            <form
-      action="https://formspree.io/f/xdoyaaab"
-      method="POST">
-      <div class="label-1">
-        <label>
-            <!-- Name: -->
-            <input type="name" placeholder="Name" name="text" required>
-          </label>
-      </div>
-      <div class="label-mail">
-        <label> 
-            <!-- Mail: -->
-            <input type="email" placeholder="Mail" name="_replyto" required>
-          </label>
-      </div>
-      <div class="label-message">
-        <label>
-            <!-- Your message: -->
-            <textarea name="message" placeholder="Message" required></textarea>
-          </label>
-      </div>
-      
-    <div class="send">
-        <button type="submit">Send</button>
-    </div>
-    </form>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://res.cloudinary.com/jsays/image/upload/v1635598117/denis-pavlovic-NVu_zR3-aQQ-unsplash.jpg" alt="">
         </div>
-        <!-------------------------------- icons --------------- -->
-        <div class="icons">
-            <div class="connect">
-                <h1>Connect with me</h1>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>A bootcamp grad who has gained knowledge about javascript, and has a strong interest in backend deveolopment/DevOps.
+               I'm a continous learner who's always open to learning new technologies.</p>
+            <a href="https://drive.google.com/file/d/1p0Hr83gw_hHgS1YGDtAqjAUoVbBpRwKO/view?usp=sharing" target="blank" class="btn">Resume</a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h1>Skills</h1>
+        </div>
+        <!-- Content -->
+        <div class="skills-content">
+            <div class="skills-bars">
+                <div class="skills-text">
+                    <h2>My Skills</h2>
+                    <p>I've developed my skillset and built a few projects using the following:</p>
+
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-html5"><h3>HTML</h3></i>
+                    <!-- <span>94%</span> -->
+                    <!-- <div class="percent-bar html-bar"></div> -->
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-css3"><h3>CSS</h3></i>
+                    <!-- <span>84%</span> -->
+                    <!-- <div class="percent-bar css-bar"></div> -->
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-js"><h3>JavaScript</h3></i>
+                    <!-- <span>65%</span> -->
+                    <!-- <div class="percent-bar js-bar"></div> -->
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-node"><h3>Nodejs</h3></i>
+                    <!-- <span>80%</span> -->
+                    <!-- <div class="percent-bar ux-bar"></div> -->
+                </div>
             </div>
-            <div class="iconz">
-                <div class="linkedin"><a href="https://www.linkedin.com/in/chiaka-williams-534284126/" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-linkedin"></i></a></div>
-                <div class="github"><a href="https://github.com/Jahsays?tab=overview&from=2021-04-01&to=2021-04-27" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-github-square"></i></a></div> 
+            <div class="skills-img">
+                <img src="https://res.cloudinary.com/jsays/image/upload/v1635598118/gabriel-heinzer-EUzk9BIEq6M-unsplash.jpg" alt="">
             </div>
         </div>
-    </div>
-    
-    <!-------------------------- Footer ----------------- -->
-    <div class="footer" id="footer">
-        <footer>
-           &copy; Chiaka Williams 
-        </footer>
-    </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        
+        <div class="heading">
+            <h1>Projects</h1>
+        </div>
+
+        <!-- Content -->
+        <div class="portfolio-content">
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="https://res.cloudinary.com/jsays/image/upload/v1619716098/box-1_img.png" alt="">
+                    
+                </div>
+                <h2>Currency converter</h2>
+                <p>A simple currency converters that converts values from one currency to another.</p>
+            </div>
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="https://res.cloudinary.com/jsays/image/upload/v1619715867/box-2_img.png" alt="">
+                    
+                </div>
+                <h2>Youtube API</h2>
+                <p>This app makes use of the youtube data API to enable users search for multiple youtube channels,
+                    these channels are then saved to local storage.
+                    As a bonus the app also allows users to view and
+                    play the latest videos on selected channels by
+                    making a second call to the API to get the videos</p>
+            </div>
+            <div class="p-box">
+                <div class="p-img">
+                    <img src="images/p3.jpg" alt="">
+                    
+                </div>
+                <h2>Recent Work</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perferendis consectetur illo, consequuntur culpa delectus?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>Connect With Me</h1>
+        </div>
+        <!-- Content -->
+        <div class="contact-content">
+            <div class="contact-info">
+                
+                <div class="info-box">
+                    <i class="fas fa-envelope-open"></i>
+                    <p>chiaka394@gmail.com</p>
+                </div>
+                
+                <div class="info-box social">
+                    <a href="https://www.linkedin.com/in/chiaka-williams-534284126/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Jahsays?tab=overview&from=2021-04-01&to=2021-04-27" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Enter Your Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                    <input type="button" value="Send" class="contact-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script >
+       let menu = document.querySelector('#menu-icon');
+       let navbar = document.querySelector('.navbar');
+
+       menu.onclick = () =>{
+
+       menu.classList.toggle('fa-times');
+       navbar.classList.toggle('active');
+    }
+
+    window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+    </script>
 </body>
 </html>
