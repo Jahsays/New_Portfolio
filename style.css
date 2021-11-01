@@ -39,6 +39,9 @@ html {
   background: #1c2834;
   color: #fff;
 }
+p{
+  text-transform: none;
+}
 section {
   padding: 50px 100px;
 }
@@ -253,7 +256,7 @@ header .navbar a:hover {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: auto;
+  height: 550px;
   background: #2c3e50;
   margin: 20px;
   padding: 40px;
@@ -281,6 +284,10 @@ header .navbar a:hover {
 .p-box p {
   font-size: var(--p-font);
   font-weight: 400;
+  color: white;
+}
+.p-box h2{
+  color: white;
 }
 .contact-content {
   display: flex;
@@ -339,6 +346,12 @@ form textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+  position: relative;
+  left: 10em;
+  width: 6em;
+  height: 3em;
+  border-radius: 1.5em;
+  border: none;
 }
 .contact-button:hover {
   background: var(--hover);

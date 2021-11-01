@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiaka's Portfoli</title>
+    <title>Chiaka's Portfolio</title>
     <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
@@ -42,9 +42,9 @@
             <h2>About Me</h2>
             <p>A bootcamp grad who has gained knowledge about javascript, and has a strong interest in backend deveolopment/DevOps.
                I'm a continous learner who's always open to learning new technologies.</p>
-            <a href="https://drive.google.com/file/d/1p0Hr83gw_hHgS1YGDtAqjAUoVbBpRwKO/view?usp=sharing" target="blank" class="btn">Resume</a>
+            <a href="https://drive.google.com/file/d/1Gbwd6qmNcjO9kbh_OHdzzOhHkeI6TT1M/view?usp=sharing" target="blank" class="btn">Resume</a>
         </div>
-    </section>
+    </section> 
 
     <!-- Skills -->
     <section class="skills" id="skills">
@@ -56,7 +56,7 @@
             <div class="skills-bars">
                 <div class="skills-text">
                     <h2>My Skills</h2>
-                    <p>I've developed my skillset and built a few projects using the following:</p>
+                    <p>I've built a few projects using some of the following:</p>
 
                 </div>
                 <div class="skills-box">
@@ -95,6 +95,7 @@
 
         <!-- Content -->
         <div class="portfolio-content">
+            <a href="https://angry-kare-150b05.netlify.app/" target="_blank" rel="noopener noreferrer"> 
             <div class="p-box">
                 <div class="p-img">
                     <img src="https://res.cloudinary.com/jsays/image/upload/v1619716098/box-1_img.png" alt="">
@@ -103,10 +104,11 @@
                 <h2>Currency converter</h2>
                 <p>A simple currency converters that converts values from one currency to another.</p>
             </div>
+        </a>
+            <a href="https://brave-perlman-63fc26.netlify.app/" target="_blank" rel="noopener noreferrer"> 
             <div class="p-box">
                 <div class="p-img">
                     <img src="https://res.cloudinary.com/jsays/image/upload/v1619715867/box-2_img.png" alt="">
-                    
                 </div>
                 <h2>Youtube API</h2>
                 <p>This app makes use of the youtube data API to enable users search for multiple youtube channels,
@@ -115,6 +117,7 @@
                     play the latest videos on selected channels by
                     making a second call to the API to get the videos</p>
             </div>
+        </a>
             <div class="p-box">
                 <div class="p-img">
                     <img src="images/p3.jpg" alt="">
@@ -148,11 +151,13 @@
             </div>
             <!-- Contact Form -->
             <div class="contact-form">
-                <form action="">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Enter Your Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-                    <input type="button" value="Send" class="contact-button">
+                <form action="https://formspree.io/f/xdoyaaab"
+                method="post">
+                    <input  type="name" placeholder="Name" name="text" required>
+                    <input  type="email" placeholder="Mail" name="_replyto" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="contact-button">Send</button>
+                    <!-- <input type="button" value="Send" class="contact-button"> -->
                 </form>
             </div>
         </div>
